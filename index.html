@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geographic Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Geographic Quiz</h1>
+            <div id="score-display">Score: <span id="score">0</span></div>
+        </header>
+
+        <main>
+            <!-- Start Screen -->
+            <div id="start-screen" class="screen active">
+                <h2>Welcome to the Geographic Quiz!</h2>
+                <p>Test your knowledge of world geography</p>
+                <div class="quiz-categories">
+                    <h3>Choose a Category:</h3>
+                    <button class="category-btn" data-category="capitals">World Capitals</button>
+                    <button class="category-btn" data-category="countries">Countries</button>
+                    <button class="category-btn" data-category="landmarks">Famous Landmarks</button>
+                    <button class="category-btn" data-category="flags">World Flags</button>
+                </div>
+                <div class="difficulty-selection">
+                    <h3>Select Difficulty:</h3>
+                    <label>
+                        <input type="radio" name="difficulty" value="easy" checked>
+                        Easy (10 questions)
+                    </label>
+                    <label>
+                        <input type="radio" name="difficulty" value="medium">
+                        Medium (15 questions)
+                    </label>
+                    <label>
+                        <input type="radio" name="difficulty" value="hard">
+                        Hard (20 questions)
+                    </label>
+                </div>
+                <button id="start-quiz-btn" class="btn primary">Start Quiz</button>
+            </div>
+
+            <!-- Quiz Screen -->
+            <div id="quiz-screen" class="screen">
+                <div class="quiz-header">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <div class="quiz-info">
+                        <span id="question-counter">Question 1 of 10</span>
+                        <span id="timer">30s</span>
+                    </div>
+                </div>
+
+                <div class="question-container">
+                    <h2 id="question-text">Loading question...</h2>
+                    <div id="question-image"></div>
+                    <div class="answers">
+                        <button class="answer-btn" data-answer="0"></button>
+                        <button class="answer-btn" data-answer="1"></button>
+                        <button class="answer-btn" data-answer="2"></button>
+                        <button class="answer-btn" data-answer="3"></button>
+                    </div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button id="next-btn" class="btn primary" disabled>Next Question</button>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="results-screen" class="screen">
+                <h2>Quiz Complete!</h2>
+                <div class="results-summary">
+                    <div class="final-score">
+                        <span id="final-score">0</span> / <span id="total-questions">10</span>
+                    </div>
+                    <div id="score-percentage">0%</div>
+                    <div id="performance-message">Great job!</div>
+                </div>
+                
+                <div class="results-details">
+                    <h3>Your Performance:</h3>
+                    <div id="results-breakdown"></div>
+                </div>
+
+                <div class="results-actions">
+                    <button id="play-again-btn" class="btn primary">Play Again</button>
+                    <button id="change-category-btn" class="btn secondary">Change Category</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="high-scores">
+                <h4>High Scores</h4>
+                <div id="high-scores-list"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
