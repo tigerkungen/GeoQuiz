@@ -262,6 +262,129 @@ const quizData = {
             correct: 3,
             difficulty: "hard"
         }
+    ],
+    
+    lund: [
+        {
+            question: "When was Lund University founded?",
+            answers: ["1666", "1676", "1686", "1696"],
+            correct: 1,
+            difficulty: "medium"
+        },
+        {
+            question: "What is the most famous landmark in Lund?",
+            answers: ["City Hall", "Lund Cathedral", "The Castle", "Main Square"],
+            correct: 1,
+            difficulty: "easy"
+        },
+        {
+            question: "Which architectural style is Lund Cathedral primarily built in?",
+            answers: ["Gothic", "Baroque", "Romanesque", "Renaissance"],
+            correct: 2,
+            difficulty: "medium"
+        },
+        {
+            question: "What is the name of Lund's main pedestrian street?",
+            answers: ["Storgatan", "Drottninggatan", "Kungsgatan", "Stora Södergatan"],
+            correct: 3,
+            difficulty: "medium"
+        },
+        {
+            question: "Lund was founded approximately in which century?",
+            answers: ["9th century", "10th century", "11th century", "12th century"],
+            correct: 1,
+            difficulty: "hard"
+        },
+        {
+            question: "What is the famous astronomical clock in Lund Cathedral called?",
+            answers: ["Horologium Lundense", "The Lund Clock", "Sankt Laurentius Clock", "The Cathedral Timekeeper"],
+            correct: 0,
+            difficulty: "hard"
+        },
+        {
+            question: "Which Swedish region is Lund located in?",
+            answers: ["Västergötland", "Skåne", "Småland", "Halland"],
+            correct: 1,
+            difficulty: "easy"
+        },
+        {
+            question: "What happens in Lund Cathedral's astronomical clock at noon and 3 PM?",
+            answers: ["Bells ring loudly", "Doors open to reveal figures", "Music plays", "Knights joust"],
+            correct: 1,
+            difficulty: "medium"
+        },
+        {
+            question: "Lund was historically part of which country before Sweden?",
+            answers: ["Norway", "Denmark", "Germany", "Poland"],
+            correct: 1,
+            difficulty: "medium"
+        },
+        {
+            question: "What is the name of Lund's famous botanical garden?",
+            answers: ["Lundagård", "Botaniska trädgården", "Stadsparken", "Universitetsträdgården"],
+            correct: 1,
+            difficulty: "hard"
+        },
+        {
+            question: "Which famous physicist studied at Lund University?",
+            answers: ["Niels Bohr", "Manne Siegbahn", "Anders Celsius", "Carl Linnaeus"],
+            correct: 1,
+            difficulty: "hard"
+        },
+        {
+            question: "What is the student carnival in Lund called?",
+            answers: ["Lundakarnevalen", "Studentfest", "Valborgsmässoafton", "Akademiska festen"],
+            correct: 0,
+            difficulty: "medium"
+        },
+        {
+            question: "In which year did Lund become part of Sweden?",
+            answers: ["1658", "1668", "1678", "1688"],
+            correct: 0,
+            difficulty: "hard"
+        },
+        {
+            question: "What is the name of the park in central Lund?",
+            answers: ["Centralparken", "Lundagård", "Stadsparken", "Universitetparken"],
+            correct: 1,
+            difficulty: "easy"
+        },
+        {
+            question: "Lund Cathedral was consecrated to which saint?",
+            answers: ["Saint Erik", "Saint Lawrence", "Saint Olaf", "Saint Bridget"],
+            correct: 1,
+            difficulty: "hard"
+        },
+        {
+            question: "What is Lund University's motto?",
+            answers: ["Ad astra", "Regia Academia", "Ad utrumque paratus", "Veritas et Utilitas"],
+            correct: 2,
+            difficulty: "hard"
+        },
+        {
+            question: "Which building houses Lund University's main library?",
+            answers: ["University Main Building", "Carolina Rediviva", "Universitetsbiblioteket", "AF-borgen"],
+            correct: 2,
+            difficulty: "medium"
+        },
+        {
+            question: "What color are the characteristic student caps worn in Lund?",
+            answers: ["Blue", "Red", "White", "Green"],
+            correct: 2,
+            difficulty: "easy"
+        },
+        {
+            question: "The Treaty of Roskilde in 1658 resulted in what for Lund?",
+            answers: ["Independence", "Transfer from Denmark to Sweden", "University founding", "Cathedral construction"],
+            correct: 1,
+            difficulty: "hard"
+        },
+        {
+            question: "What is the approximate current population of Lund?",
+            answers: ["70,000", "95,000", "125,000", "150,000"],
+            correct: 2,
+            difficulty: "medium"
+        }
     ]
 };
 
@@ -314,6 +437,4 @@ function getMixedQuestions(difficulty, count) {
     // Shuffle and return
     const shuffled = [...filteredQuestions].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, count);
-
 }
-
