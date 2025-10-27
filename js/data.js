@@ -33,7 +33,7 @@ const quizData = {
         },
         {
             question: "What is the capital of Kazakhstan?",
-            answers: ["Almaty", "Nur-Sultan", "Shymkent", "Aktobe"],
+            answers: ["Almaty", "Astana", "Shymkent", "Aktobe"],
             correct: 1,
             difficulty: "hard"
         },
@@ -314,4 +314,5 @@ function getMixedQuestions(difficulty, count) {
     // Shuffle and return
     const shuffled = [...filteredQuestions].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, count);
+
 }
