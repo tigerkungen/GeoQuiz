@@ -9,6 +9,7 @@ A comprehensive JavaScript-based geographic quiz web application featuring multi
 - **Countries** - Learn about nations and their characteristics  
 - **Famous Landmarks** - Identify iconic monuments and locations
 - **World Flags** - Recognize flags from around the globe
+- **Lund, Sweden** - Explore the history and landmarks of the historic Swedish city
 
 ### 🎯 Difficulty Levels
 - **Easy** (10 questions) - Basic geographic knowledge
