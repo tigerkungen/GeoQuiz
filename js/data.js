@@ -79,7 +79,7 @@ const quizData = {
         {
             question: "Which country has the largest population in the world?",
             answers: ["India", "China", "United States", "Indonesia"],
-            correct: 1,
+            correct: 0,
             difficulty: "easy"
         },
         {
@@ -316,3 +316,4 @@ function getMixedQuestions(difficulty, count) {
     return shuffled.slice(0, count);
 
 }
+
